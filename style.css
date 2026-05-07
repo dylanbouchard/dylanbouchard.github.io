@@ -1,0 +1,155 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --link: #1a1a1a;
+  --link-hover: #8a3324;
+  --rule: #d6d3cc;
+  --bg: #fffdf7;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Charter", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.25rem;
+}
+
+.affiliation {
+  color: var(--muted);
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.links {
+  font-size: 0.95rem;
+}
+
+.links a {
+  margin-right: 1rem;
+}
+
+.links a:last-child { margin-right: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: var(--link-hover); }
+
+section {
+  margin: 2.5rem 0;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin: 0 0 1.25rem;
+}
+
+p { margin: 0 0 0.75rem; }
+
+.entries {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entries > li {
+  margin-bottom: 1.25rem;
+}
+
+.entries.pubs {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.entries.pubs > li {
+  margin-bottom: 1rem;
+  padding-left: 0.25rem;
+}
+
+.title {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+}
+
+.title .meta {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.desc {
+  margin: 0 0 0.35rem;
+  color: var(--text);
+}
+
+.links-inline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.authors { color: var(--muted); }
+
+.ptitle { display: inline; }
+
+.venue { font-style: italic; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  main { padding: 2.5rem 1.25rem 2rem; }
+  h1 { font-size: 1.5rem; }
+  .links a { display: inline-block; margin-bottom: 0.25rem; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e6e1;
+    --muted: #a8a59e;
+    --link: #e8e6e1;
+    --link-hover: #d99a78;
+    --rule: #34322d;
+    --bg: #1a1917;
+  }
+}
