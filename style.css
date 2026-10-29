@@ -99,6 +99,7 @@ p { margin: 0 0 0.75rem; }
 .entries.pubs > li {
   margin-bottom: 1rem;
   padding-left: 0.25rem;
+  font-size: 0.95rem;
 }
 
 .title {
@@ -125,15 +126,13 @@ p { margin: 0 0 0.75rem; }
 .authors { color: var(--muted); }
 
 .pubs .ptitle {
-  display: block;
-  margin-bottom: 0.1rem;
-  font-weight: 700;
+  display: inline;
+  font-weight: 600;
 }
 
 .pubs .authors,
 .pubs .publication-meta {
   display: inline;
-  font-size: 0.95rem;
 }
 
 .pubs .authors strong { color: var(--text); }
