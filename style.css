@@ -124,6 +124,20 @@ p { margin: 0 0 0.75rem; }
 
 .authors { color: var(--muted); }
 
+.pubs .ptitle {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-weight: 700;
+}
+
+.pubs .authors,
+.pubs .publication-meta {
+  display: inline;
+  font-size: 0.95rem;
+}
+
+.pubs .authors strong { color: var(--text); }
+
 .ptitle { display: inline; }
 
 .venue { font-style: italic; }
@@ -145,11 +159,11 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #e8e6e1;
-    --muted: #a8a59e;
-    --link: #e8e6e1;
+    --text: #f2f0eb;
+    --muted: #c5c1b9;
+    --link: #f2f0eb;
     --link-hover: #d99a78;
-    --rule: #34322d;
+    --rule: #49463f;
     --bg: #1a1917;
   }
 }
