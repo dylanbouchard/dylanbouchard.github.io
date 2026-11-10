@@ -141,6 +141,11 @@ p { margin: 0 0 0.75rem; }
 
 .venue { font-style: italic; }
 
+.talk-links {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
 footer {
   margin-top: 3rem;
   padding-top: 1.25rem;
